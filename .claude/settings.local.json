@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(winget install:*)",
+      "Bash(curl -L https://dl.google.com/android/repository/commandlinetools-win-11076708_latest.zip -o /tmp/cmdline-tools.zip --progress-bar)",
+      "Bash(echo \"Exit: $?\")",
+      "Bash(unzip -q /tmp/cmdline-tools.zip -d __TRACKED_VAR__/cmdline-tools/)",
+      "Bash(wmic cpu:*)",
+      "Bash(powershell -Command \"Get-WmiObject -Class Win32_Processor | Select-Object -ExpandProperty Name\")",
+      "Bash(powershell -Command \"Get-WindowsOptionalFeature -Online -FeatureName HypervisorPlatform | Select-Object -ExpandProperty State\")",
+      "Bash(powershell -Command \"Get-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All | Select-Object -ExpandProperty State\")",
+      "Bash(npm install:*)",
+      "Bash(node -e \"const p = require\\('./node_modules/expo/package.json'\\); console.log\\('expo:', p.version\\)\")",
+      "Bash(node -e \"const p = require\\('./node_modules/expo-router/package.json'\\); console.log\\('expo-router:', p.version\\)\")",
+      "Bash(curl -s http://localhost:8081/status)",
+      "Bash(npx expo:*)",
+      "Bash(node -e ':*)"
+    ]
+  }
+}
